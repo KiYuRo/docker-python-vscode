@@ -1,4 +1,4 @@
-# DockerとVScodeでPython環境構築
+# DockerとVSCodeでPython環境構築
 Qiita記事:
 
 - Step1:DockerHubから取得したDockerイメージを使用する
