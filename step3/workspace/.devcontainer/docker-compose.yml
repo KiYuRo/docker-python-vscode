@@ -1,0 +1,9 @@
+services:                           # サービスを定義しますという決まり文句
+  python:                           # pythonという名前でサービスを定義
+    image: python:step3             # イメージのREPOSITORY名:TAG名を指定
+    build: .                        # Dockerfileを相対パスで指定
+    container_name: python-step3    # 作成されるコンテナ名を指定
+    working_dir: /workspace/src     # 作業ディレクトリを指定
+    volumes:                        # マウントするファイルを指定する
+      - ../src:/workspace/src       # ローカルPCのsrc:コンテナのworkspace/src
+    tty: true                       # コンテナを起動し続ける
